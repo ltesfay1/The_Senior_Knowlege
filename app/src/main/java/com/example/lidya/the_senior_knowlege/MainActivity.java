@@ -14,8 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 
-public class Main_Menu extends AppCompatActivity
+public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -24,7 +25,7 @@ public class Main_Menu extends AppCompatActivity
         setContentView(R.layout.activity_main__menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +33,7 @@ public class Main_Menu extends AppCompatActivity
                 Intent newIntent = new Intent(getApplicationContext(), Email.class);
                 startActivity(newIntent);
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -42,6 +43,34 @@ public class Main_Menu extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        RelativeLayout advise = (RelativeLayout) findViewById(R.id.advise),
+                upper = (RelativeLayout) findViewById(R.id.upper_level),
+                rate = (RelativeLayout) findViewById(R.id.rate);
+
+        advise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AdviseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        upper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UpperLevelActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        rate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ClassRateActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
