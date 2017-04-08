@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/upper_rec"
+            android:icon="@drawable/upper_level"
+            android:title="Upper Levels"
+            app:showAsAction="always|withText" />
+
+        <item
+            android:id="@+id/events_menu"
+            android:icon="@drawable/events_logo"
+            android:title="Events"
+            app:showAsAction="always|withText" />
+        <item
+            android:id="@+id/clubs_menu"
+            android:icon="@drawable/clubs_logo"
+            android:title="Clubs"
+            app:showAsAction="always|withText" />
+
+    <!--</group>-->
+    <item
+        android:id="@+id/class_rating"
+        android:icon="@mipmap/class_rate_icon"
+        app:showAsAction="always|withText"
+        android:title="Class Ratings" />
+    <item
+        android:id="@+id/senior_rec"
+        android:icon="@drawable/seniorchat"
+        app:showAsAction="always|withText"
+        android:title="Senior Tips"
+        android:visible="true" />
+
+</menu>
