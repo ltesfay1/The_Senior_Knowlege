@@ -11,8 +11,6 @@
         app:rowCount="2">
         <LinearLayout
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             app:layout_gravity="center_horizontal">
             <RelativeLayout
                 android:id="@+id/advise"
@@ -26,14 +24,16 @@
                     android:layout_marginTop="14dp"
                     android:layout_width="140dp"
                     android:layout_height="140dp" />
+
                 <TextView
-                    android:text="Advise"
-                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="10dp"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Senior Tips"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/upper_level"
@@ -46,20 +46,22 @@
                     android:layout_marginTop="14dp"
                     android:layout_width="140dp"
                     android:layout_height="140dp" />
+
                 <TextView
-                    android:text="Upper Level"
-                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="10dp"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Upper Levels"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
             </RelativeLayout>
         </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            app:layout_gravity="center_horizontal">
             <RelativeLayout
                 android:id="@+id/rate"
                 android:layout_marginRight="10dp"
@@ -72,14 +74,38 @@
                     android:layout_marginTop="14dp"
                     android:layout_width="140dp"
                     android:layout_height="140dp" />
+
                 <TextView
-                    android:text="Class Rating"
-                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="10dp"
-                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Class Ratings"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="invisible"
+                android:layout_height="180dp"
+                android:layout_width="180dp"
+                android:background="#f8f1e1">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/menu_upper"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" />
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Upper Level"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.GridLayout>

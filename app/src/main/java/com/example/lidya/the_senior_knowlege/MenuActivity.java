@@ -1,5 +1,6 @@
 package com.example.lidya.the_senior_knowlege;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,21 +24,24 @@ public class MenuActivity extends AppCompatActivity {
         advise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MenuActivity.this, AdviseActivity.class);
+                startActivity(intent);
             }
         });
 
         upper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MenuActivity.this, UpperLevelActivity.class);
+                startActivity(intent);
             }
         });
 
         rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MenuActivity.this, ClassRateActivity.class);
+                startActivity(intent);
             }
         });
     }
