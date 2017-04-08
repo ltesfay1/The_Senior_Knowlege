@@ -1,6 +1,8 @@
 package com.example.lidya.the_senior_knowlege;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -27,8 +29,8 @@ public class Main_Menu extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent newIntent = new Intent(getApplicationContext(), Email.class);
+                startActivity(newIntent);
             }
         });
 
