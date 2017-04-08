@@ -10,15 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".AdviseActivity">
-        </activity>
-
-        <activity android:name=".MenuActivity">
-
-        <activity android:name=".Main_Menu"
-            android:label="@string/title_activity_main__menu"
+        <activity android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +19,22 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AdviseActivity">
+        </activity>
+
+        <activity android:name=".MenuActivity"
+            android:theme="@style/AppTheme.Main"/>
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.Main">
+
+        </activity>
+
         <activity android:name=".UpperLevelActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ClassRateActivity"/>
-        <activity android:name=".ClassesActivity"/>
+        <activity android:name=".ClassesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
