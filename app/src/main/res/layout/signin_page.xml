@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lidya.the_senior_knowlege.MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/main_login_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/main_page_testudo_login2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="The \n Senior \n Knowlege"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textEmailAddress"
+        android:text="Email Address"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="206dp"
+        android:layout_below="@+id/title_name"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/email_login"
+        android:layout_alignStart="@+id/email_login" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:fontFamily="serif-monospace"
+        android:text="Sign In"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
